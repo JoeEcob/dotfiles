@@ -1,0 +1,30 @@
+#!/usr/bin/env perl
+
+use JSON;
+
+if (!$ARGV[0]) {
+  print "Usage is ./gitlab-exporter <path_to_output>\n";
+  exit 1;
+}
+
+my $API_BASE = 'https://gitlab.com/api/v4/';
+my $output_dir = $ARGV[0];
+print "Outputting to $output_dir\n";
+
+my $json = `curl -sSL ${API_BASE}users/3419209/projects`;
+my $projects = decode_json($json);
+
+foreach my $project (@$projects) {
+  my $project_name = $project->{name};
+  my $project_id = $project->{id};
+
+  print "Doing $project_name - $project_id...";
+
+  my $url = "${API_BASE}projects/$project_id/repository/archive.zip";
+
+  `curl -ssL '$url' -o '$output_dir/$project_name.zip'`;
+
+  print "Done.\n";
+}
+
+print "Everything complete!\n";
