@@ -19,8 +19,10 @@ alias gipu='git push'
 alias gipp='git pull && git push'
 alias gimm='git merge master'
 
+
 # git config --global alias.diffname 'diff --name-status dev'
 # git config --global help.autocorrect 5
+# shopt -s histappend
 
 
 # https://askubuntu.com/a/249175
