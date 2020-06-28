@@ -2,6 +2,7 @@ alias ll='ls -la'
 alias ls='ls --color=never'
 export EDITOR=vim
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DO_NOT_TRACK=1
 HISTTIMEFORMAT='%F %T '
 
 
