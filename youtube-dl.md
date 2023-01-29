@@ -1,1 +1,1 @@
-youtube-dl -x --audio-format mp3 -o '%(title)s.%(ext)s' ''
+youtube-dl -xi --audio-format mp3 -o '%(title)s.%(ext)s' ''
