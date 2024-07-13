@@ -1,1 +1,1 @@
-youtube-dl -xi --audio-format mp3 -o '%(title)s.%(ext)s' ''
+yt-dlp -xic --audio-format mp3 --metadata-from-title "%(artist)s - %(title)s" -o '%(title)s.%(ext)s' ''

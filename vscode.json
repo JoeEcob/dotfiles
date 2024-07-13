@@ -1,0 +1,36 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Debian (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Debian"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Debian (WSL)",
+    "go.toolsManagement.autoUpdate": true,
+    "editor.renderWhitespace": "all",
+    "workbench.editor.empty.hint": "hidden",
+    "explorer.autoReveal": true,
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.telemetry.enabled": false,
+    "gitlens.launchpad.indicator.enabled": false,
+    "files.insertFinalNewline": true
+}
