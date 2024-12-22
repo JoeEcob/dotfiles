@@ -13,11 +13,12 @@ wg setconf <INTERFACE> <FILE>
 ````
 wg genkey | tee privatekey | wg pubkey > publickey
 
-wg set wg0 peer <PUBLIC> allowed-ips <IP>
+wg set wg0 peer '<PUBLIC>' allowed-ips 10.8.0.X
 ````
 
 
 ## .conf
+# /etc/wireguard/<INTERFACE>.conf
 
 ```
 [Interface]
