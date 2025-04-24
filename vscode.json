@@ -1,11 +1,17 @@
 {
   "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": false,
   "explorer.autoReveal": true,
+  "explorer.confirmDragAndDrop": false,
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.windows": "Debian (WSL)",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none"
 }
