@@ -7,6 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_whitespaces": "all",
+  "preview_tabs": {
+    "enabled": false,
+  },
+  "languages": {
+    "CSharp": {
+      "tab_size": 4,
+    },
+  },
   "tab_size": 2,
   "auto_indent": "none",
   "icon_theme": {
@@ -31,11 +40,6 @@
     "dock": "right",
     "favorite_models": [],
     "model_parameters": [],
-  },
-  "agent_servers": {
-    "claude-acp": {
-      "type": "registry",
-    },
   },
   "telemetry": {
     "diagnostics": false,
