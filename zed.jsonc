@@ -12,6 +12,9 @@
     "enabled": false,
   },
   "languages": {
+    "HTML": {
+      "format_on_save": "off"
+    },
     "CSharp": {
       "tab_size": 4,
     },
@@ -50,9 +53,17 @@
   },
   "ui_font_size": 18.0,
   "buffer_font_size": 15.0,
+  "buffer_font_features": {
+    "calt": false
+  },
   "theme": {
     "mode": "dark",
     "light": "One Light",
     "dark": "Ayu Dark",
+  },
+  "file_types": {
+    "CSharp": [
+      "*.razor"
+    ],
   },
 }
